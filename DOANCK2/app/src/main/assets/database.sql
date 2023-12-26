@@ -1,0 +1,18 @@
+BEGIN TRANSACTION;
+DROP TABLE IF EXISTS "product";
+CREATE TABLE IF NOT EXISTS "product" (
+	"id"	INTEGER,
+	"tensp"	TEXT NOT NULL,
+	"soluong"	INTEGER,
+	"image"	TEXT,
+	"gia"	INTEGER,
+	"categories_id"	INTEGER,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+DROP TABLE IF EXISTS "categories";
+CREATE TABLE IF NOT EXISTS "categories" (
+	"id"	INTEGER,
+	"name"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+COMMIT;
