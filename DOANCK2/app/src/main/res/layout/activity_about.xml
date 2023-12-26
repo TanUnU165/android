@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên: Phan Phúc Tân"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/text_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lớp: D20_TH11"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_name"
+        app:layout_constraintStart_toStartOf="@+id/text_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_student_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sinh viên: DH52006605"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_class"
+        app:layout_constraintStart_toStartOf="@+id/text_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: dh52006605@student.stu.edu.vn"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_student_id"
+        app:layout_constraintStart_toStartOf="@+id/text_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điện thoại: 0707719300"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_email"
+        app:layout_constraintStart_toStartOf="@+id/text_name"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/main"
+        android:text="Quay lại"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageButton
+        android:id="@+id/btnPhone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/text_phone"
+        app:layout_constraintBottom_toBottomOf="@id/text_phone"
+        android:layout_marginStart="30dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
